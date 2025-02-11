@@ -56,7 +56,8 @@ function LiferayReactMap(props) {
                             <Popup>
                                 <strong>{poi.popupHeadline}</strong> <br />
                                 {poi.popupLineOne} <br />
-                                {poi.popupLineTwo}
+                                {poi.popupLineTwo} <br />
+                                <a href={poi.url}>{poi.details}</a>
                             </Popup>
                         </Marker>
                     )

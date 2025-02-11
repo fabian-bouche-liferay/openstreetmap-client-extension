@@ -1,0 +1,31 @@
+.custom-marker {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.marker-container {
+	width: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.marker-portrait {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid white;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.marker-headline {
+	margin-top: 4px;
+	font-size: 12px;
+	font-weight: bold;
+	color: black;
+	background: white;
+	padding: 2px 5px;
+	border-radius: 5px;
+}       

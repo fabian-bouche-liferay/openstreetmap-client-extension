@@ -1,0 +1,8 @@
+[#assign isEdit=layoutMode == "edit"]
+[#if !isEdit]
+<liferay-react-map>
+[/#if]
+	<lfr-drop-zone></lfr-drop-zone>
+[#if !isEdit]
+</liferay-react-map>
+[/#if]

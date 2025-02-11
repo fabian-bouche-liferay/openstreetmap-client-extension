@@ -91,6 +91,8 @@ class LiferayReactMapWebComponent extends HTMLElement {
                 portrait: poi.querySelector(".marker-portrait").src,
                 lat: poi.querySelector(".marker-latitude").innerHTML,
                 lon: poi.querySelector(".marker-longitude").innerHTML,
+                url: poi.querySelector(".marker-url").href,
+                details: poi.querySelector(".marker-url").innerHTML,
             });
         });
 
