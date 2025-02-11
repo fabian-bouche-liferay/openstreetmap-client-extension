@@ -1,0 +1,44 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"dataType": "string",
+					"defaultValue": "",
+					"label": "Object Name",
+					"name": "objectName",
+					"type": "text"
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "",
+					"label": "Object status field name",
+					"name": "pollingStatusFieldName",
+					"type": "text"
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "",
+					"label": "Status pending value",
+					"name": "pollingStatusFieldPending",
+					"type": "text"
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "",
+					"label": "Status success value",
+					"name": "pollingStatusFieldSuccess",
+					"type": "text"
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "",
+					"label": "OAuth 2.0 client External Reference Code",
+					"name": "client",
+					"type": "text"
+				}
+			],
+			"label": "Configuration"
+		}
+	]
+}

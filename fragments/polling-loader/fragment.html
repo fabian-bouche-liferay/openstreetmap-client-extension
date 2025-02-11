@@ -1,0 +1,21 @@
+[#assign infoListDisplayObject = (request.getAttribute("INFO_ITEM"))! /]
+<polling-loader mode="${layoutMode}"
+								objectName="${configuration.objectName}"
+								pollingStatusFieldName="${configuration.pollingStatusFieldName}"
+								pollingStatusFieldPending = "${configuration.pollingStatusFieldPending}"
+    						pollingStatusFieldSuccess = "${configuration.pollingStatusFieldSuccess}"
+								client = "${configuration.client}"
+								[#if infoListDisplayObject?? && infoListDisplayObject.objectEntryId??]
+									objectEntryId="${infoListDisplayObject.objectEntryId}"
+								[/#if]
+								>
+	<div slot="PENDING">
+		<lfr-drop-zone data-lfr-drop-zone-id="pending-drop-zone"></lfr-drop-zone>
+	</div>
+	<div slot="SUCCESS">          
+		<lfr-drop-zone data-lfr-drop-zone-id="success-drop-zone"></lfr-drop-zone>
+	</div>
+	<div slot="FAILURE">
+		<lfr-drop-zone data-lfr-drop-zone-id="failure-drop-zone"></lfr-drop-zone>
+	</div>
+</polling-loader>
