@@ -11,14 +11,6 @@ function LiferayReactMap(props) {
         setPoiList(props.poiList)
     }, [props]);
 
-    const [viewport, setViewport] = useState({
-        latitude: 48.8566,
-        longitude: 2.3522,
-        zoom: 12,
-        width: "100%",
-        height: "500px",
-      });
-
     const CalculateBounds = ({ poiList }) => {
     const map = useMap();
     
